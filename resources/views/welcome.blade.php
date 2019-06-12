@@ -66,7 +66,10 @@
     <body>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
+
                 <div class="top-right links">
+                    <a href="{{ url('/home') }}">Recitales</a>
+                    <a href="{{ route('login') }}">Workshops</a>
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
@@ -85,7 +88,13 @@
                 </div>
 
                 <div class="links">
-                    Sacá tus entradas favoritas de la manera más simple, rápida y cómoda.
+                    <p>
+                        Sacá tus entradas favoritas de la manera más simple, rápida y cómoda.
+                    </p>
+                    <a href="{{ route('terminos') }}">Términos y condiciones</a>
+                    <a href="#">Ayuda</a>
+                    <a href="#">Productores</a>
+                    <a href="#">Preguntas Frecuentes</a>
                 </div>
             </div>
         </div>
