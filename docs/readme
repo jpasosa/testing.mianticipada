@@ -1,0 +1,7 @@
+jpasosa@gmail.com
+15.JUN.2019
+
+Luego hay que eliminar files originales del Laravel como:
+public/css/app.css
+public/js/app.js
+
