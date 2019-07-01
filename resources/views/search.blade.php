@@ -1,6 +1,6 @@
 @extends('layouts.frontend')
 
-@section('title', 'Home')
+@section('title', 'Busqueda')
 
 @section('adds_js_css')
     {{-- acá puedo agregar JS o CSS según corresponda para dicha sección --}}
@@ -16,20 +16,19 @@
     @parent
 @endsection
 
-@section('next_events')
-    @parent
+@section('next_events') {{-- saco esto --}}
 @endsection
 
-@section('events') {{-- saco esto --}}
+@section('events')
+    @parent
 @endsection
 
 @section('separator')
-    @parent
+
 @endsection
 
 
 @section('by_categories')
-    @parent
 @endsection
 
 

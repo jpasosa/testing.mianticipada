@@ -15,6 +15,17 @@ Route::get('/', function () {
     return view('newhome');
 });
 
+
+Route::get('/buscar', function () {
+    return view('search');
+})->name('buscar');
+
+
+Route::get('/eventos', function () {
+    return view('events');
+})->name('eventos');;
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

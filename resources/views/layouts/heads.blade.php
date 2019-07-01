@@ -5,7 +5,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>mianticipada</title>
+    <title>mianticipada - @yield('title')</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap.offcanvas.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/core.css') }}">
 
+    @yield('adds_js_css')
 
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="{{ asset('') }}css/style.css" >
