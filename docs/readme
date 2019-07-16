@@ -1,3 +1,63 @@
+16.Julio.2019
+
+
+tables
+
+USERS                   PASSWROD_RESETS         SOCIAL_FACEBOOK_ACCOUNTS
+--------                ----------------        -------------------------
+(*)id                   email                   (*)user_id
+name                    token                   (*)provider_user_id
+email                   updated_at              provider
+email_verified_at       created_at
+password
+remembertoken
+dni
+updated_at
+created_at
+
+EVENTS                  CATEGORIES              IMAGES_EVENTS
+------                  -----------             -------------
+(*)id                   (*)id                   (*)id
+title                   name                    file
+description             icon                    alt
+public                  updated_at              hover
+date                    creted_at               (*)event_id
+duration
+type[teatro/recital/workshop]
+(*)place_id
+adult_only              EVENTS_CATEGORIES       BUYTRANSACTIONS
+activeimage             -----------------       ---------------
+restquant               (*)id                   (*)id
+totalquant              (*)event_id             (*)user_id
+(*)usercreate_id        (*)category_id          quant
+(*)usercoord_id         updated_at              (*)locationnormal_id
+(*)userzone_id          created_at              status[approved/inproccess/refused]
+updated_at                                      updated_at
+created_at                                      created_at
+
+LOCATIONSNORMAL         PLACES
+---------------         -------
+(*)id                   (*)id
+name                    name
+description             Address
+price                   phone
+serviceprice            location
+restquant               updated_at
+totalquant              created_ad
+(*)event_id
+activeimage
+updated_at
+created_at
+
+
+
+
+
+
+
+
+
+
 jpasosa@gmail.com
 15.JUN.2019
 
