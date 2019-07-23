@@ -15,7 +15,7 @@ dni
 updated_at
 created_at
 
-EVENTS                  CATEGORIES              IMAGES_EVENTS
+EVENTS                  CATEGORIES              EVENTS_IMAGES
 ------                  -----------             -------------
 (*)id                   (*)id                   (*)id
 title                   name                    file
@@ -25,13 +25,14 @@ date                    creted_at               (*)event_id
 duration
 type[teatro/recital/workshop]
 (*)place_id
-adult_only              EVENTS_CATEGORIES       BUYTRANSACTIONS
+adult_only              EVENTS_CATEGORIES       TRANSACTIONS
 activeimage             -----------------       ---------------
 restquant               (*)id                   (*)id
 totalquant              (*)event_id             (*)user_id
 (*)usercreate_id        (*)category_id          quant
 (*)usercoord_id         updated_at              (*)locationnormal_id
 (*)userzone_id          created_at              status[approved/inproccess/refused]
+                                                observations
 updated_at                                      updated_at
 created_at                                      created_at
 
