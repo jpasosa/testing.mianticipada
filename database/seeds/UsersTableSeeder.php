@@ -36,5 +36,21 @@ class UsersTableSeeder extends Seeder
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ]);
+        DB::table('users')->insert([
+            'name' => 'Alejo Sosa',
+            'email' => 'alejososa@gmail.com',
+            'password' => bcrypt('alejo'),
+            'internalnotes' => 'es usuario común para comprar',
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
+        ]);
+        DB::table('users')->insert([
+            'name' => 'Agustina Mortola',
+            'email' => 'jugandocreamos@gmail.com',
+            'password' => bcrypt('namaste'),
+            'internalnotes' => 'es usuario coordinador de zona y de eventos',
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
+        ]);
     }
 }
