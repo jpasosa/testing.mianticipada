@@ -15,6 +15,7 @@ class EventsTableSeeder extends Seeder
         DB::table('events')->insert([
             'title' => 'Estación primera de Lanus',
             'description' => 'Show todos los vienres, un portar a Río de Janeiro te espera en Barracas',
+            'url' => 'estacion-primera-de-lanus',
             'public' => true,
             'date' => '2019-07-30',
             'duration' => '4h',
@@ -34,6 +35,7 @@ class EventsTableSeeder extends Seeder
         DB::table('events')->insert([
             'title' => 'Show Estacato Percusion',
             'description' => 'Show de estacato percusión',
+            'url' => 'show-estacatto-percusion',
             'public' => true,
             'date' => '2019-07-30',
             'duration' => '2h',

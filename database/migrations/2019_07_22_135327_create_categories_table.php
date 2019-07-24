@@ -16,7 +16,9 @@ class CreateCategoriesTable extends Migration
         Schema::create('categories', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
+            $table->string('image')->nullable(); // es la imágen para mostrar en la HOME en categorías
             $table->string('icon');
+            $table->integer('order')->default(0); // es el orden que se muestra en la HOME. En 0 no se muestra. Solo agarra seis al azar.
             $table->timestamps();
         });
     }

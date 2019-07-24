@@ -20,12 +20,14 @@ class CategoriesTableSeeder extends Seeder
         ]);
         DB::table('categories')->insert([
             'name' => 'Recital',
+            'image' => 'fondo-recital.jpg',
             'icon' => 'recital.jpg',
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ]);
         DB::table('categories')->insert([
             'name' => 'Fiesta',
+            'image' => 'fondo-fiesta.jpg',
             'icon' => 'fiesta.jpg',
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
