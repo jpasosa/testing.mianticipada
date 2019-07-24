@@ -24,7 +24,8 @@ class CreateEventsTable extends Migration
             $table->enum('type', ['teatro', 'recital', 'workshop', 'otros']);
             $table->BigInteger('place_id')->unsigned();
             $table->boolean('adultonly');
-            $table->string('image');
+            $table->string('image');                // imagen principal
+            $table->string('banner')->nullable();   // si va un banner preparado el nombre del archivo
             $table->integer('restquant');
             $table->integer('totalquant');
             $table->BigInteger('usercreate_id')->unsigned();
