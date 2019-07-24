@@ -16,8 +16,8 @@ class CreateEventsImagesTable extends Migration
         Schema::create('events_images', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('file');
-            $table->string('alt');
-            $table->string('hover');
+            $table->string('alt')->nullable();
+            $table->string('hover')->nullable();
             $table->BigInteger('event_id')->unsigned();
             $table->timestamps();
 

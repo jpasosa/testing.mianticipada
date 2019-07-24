@@ -17,12 +17,12 @@ class CreateLocationsNormalTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('description')->nullable();
-            $table->float('price');
-            $table->float('serviceprice');
-            $table->integer('restquant');
-            $table->integer('totalquant');
+            $table->float('price')->default(0.00);
+            $table->float('serviceprice')->default(0.00);
+            $table->integer('restquant')->default(100);
+            $table->integer('totalquant')->default(100);
             $table->BigInteger('event_id')->unsigned();
-            $table->string('activeimage');
+            $table->string('activeimage')->nullable();
             $table->timestamps();
 
             $table->foreign('event_id')->references('id')->on('events');

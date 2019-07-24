@@ -18,16 +18,17 @@ class CreateEventsTable extends Migration
             $table->BigIncrements('id');
             $table->string('title');
             $table->string('description')->nullable();
-            $table->boolean('public');
+            $table->boolean('public')->default(true);
+            $table->boolean('active')->default(true);
             $table->date('date');
-            $table->string('duration');
-            $table->enum('type', ['teatro', 'recital', 'workshop', 'otros']);
+            $table->string('duration')->default('2h');
+            $table->enum('type', ['teatro', 'recital', 'workshop', 'otros'])->default('recital');
             $table->BigInteger('place_id')->unsigned();
-            $table->boolean('adultonly');
-            $table->string('image');                // imagen principal
+            $table->boolean('adultonly')->default(true);
+            $table->string('image')->nullable();                // imagen principal
             $table->string('banner')->nullable();   // si va un banner preparado el nombre del archivo
-            $table->integer('restquant');
-            $table->integer('totalquant');
+            $table->integer('restquant')->default(100);
+            $table->integer('totalquant')->default(100);
             $table->BigInteger('usercreate_id')->unsigned();
             $table->BigInteger('usercoord_id')->unsigned();
             $table->BigInteger('userzone_id')->unsigned();

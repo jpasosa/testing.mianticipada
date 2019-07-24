@@ -19,7 +19,7 @@ class CreateTransactionsTable extends Migration
             $table->integer('quant');
             $table->bigInteger('location_normal_id')->unsigned();
             $table->enum('status', ['approved', 'inproccess', 'refused', 'canceled']);
-            $table->string('observations');
+            $table->string('observations')->nullable();
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users');
