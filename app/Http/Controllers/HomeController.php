@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Event;
 use App\Category;
 use App\Publicity;
+use Auth;
 
 class HomeController extends Controller
 {
@@ -28,6 +29,9 @@ class HomeController extends Controller
      */
     public function index()
     {
+
+        // fuerzo logout
+        Auth::logout();
 
         $data['events']     = Event::getEventsInHome();
         $data['banners']    = Event::getBanners();

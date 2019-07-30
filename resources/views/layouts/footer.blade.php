@@ -64,8 +64,8 @@
                     <div class="footer-dashboard">
                         <h3>mianticipada.com.ar</h3>
                         <ul>
-                            <li><a href="#">ENTRAR</a></li>
-                            <li><a href="#">REGISTRARME</a></li>
+                            <li><a href="{{ url('/login') }}">ENTRAR</a></li>
+                            <li><a href="{{ url('/register') }}">REGISTRARME</a></li>
                         </ul>
                     </div>
                 </div>
