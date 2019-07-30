@@ -5,7 +5,7 @@
                 <div class="section-header">
                     <h2>Próximos Eventos</h2>
                     <p>Ahora comprar las anticipadas es muy fácil, simplemente seleccioná tu evento favorito, compra la cantidad de entradas que quieras, pagá con tarjeta, débito y/o por rapipago, o como necesites pagarlo, imprimí tu entrada y/o llevate tu celular y tu DNI, listo. Planificá tu diversión por adelantado y pagá menos.</p>
-                    <a href="#">Ver todos los Eventos</a>
+                    <a href="{{ url('/eventos') }}">Ver todos los Eventos</a>
                 </div>
                 <div class="section-content">
                     <ul class="clearfix">

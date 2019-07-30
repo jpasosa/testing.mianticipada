@@ -48,15 +48,18 @@ Route::get('testing', function ()
 
 Route::get('/', 'HomeController@index');
 
+Route::get('/eventos', 'AllEventsController@index');
+
+
 
 Route::get('/buscar', function () {
     return view('search');
 })->name('buscar');
 
 
-Route::get('/eventos', function () {
-    return view('events');
-})->name('eventos');;
+// Route::get('/eventos', function () {
+//     return view('events');
+// })->name('eventos');;
 
 
 Auth::routes();

@@ -50,7 +50,7 @@ class Event extends Model
     {
         try {
             $events = Event::where('active', true)
-                                ->whereDate('date', '>=', date('Y-m-d'))
+                                ->whereDate('finishdate', '>=', date('Y-m-d'))
                                 ->inRandomOrder()
                                 ->take(6)
                                 ->get();
@@ -80,6 +80,25 @@ class Event extends Model
         }
 
         return $banners;
+    }
+
+    static function getAllEvents()
+    {
+
+        try {
+            $events = Event::orderBy('date', 'asc')
+                                ->where('active', true)
+                                ->whereDate('finishdate', '>=', date('Y-m-d'))
+                                ->get();
+
+        } catch (Illuminate\Database\QueryException $e) {
+            dd($e);
+        } catch (PDOException $e) {
+            dd($e);
+        }
+
+
+        return $events;
     }
 
 
