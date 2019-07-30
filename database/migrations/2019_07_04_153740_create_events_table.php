@@ -23,6 +23,7 @@ class CreateEventsTable extends Migration
             $table->boolean('active')->default(true);
             $table->date('date');
             $table->string('duration')->default('2h');
+            $table->date('finishdate'); // Fecha de finalización de venta de entradas.
             $table->enum('type', ['teatro', 'recital', 'workshop', 'otros'])->default('recital');
             $table->BigInteger('place_id')->unsigned();
             $table->boolean('adultonly')->default(true);
