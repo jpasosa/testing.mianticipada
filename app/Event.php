@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Event;
 
 class Event extends Model
 {
@@ -43,6 +44,42 @@ class Event extends Model
     function locationsNormal()
     {
         return $this->hasMany( LocationNormal::class );
+    }
+
+    static function getEventsInHome()
+    {
+        try {
+            $events = Event::where('active', true)
+                                ->whereDate('date', '>=', date('Y-m-d'))
+                                ->inRandomOrder()
+                                ->take(6)
+                                ->get();
+        } catch (Illuminate\Database\QueryException $e) {
+            dd($e);
+        } catch (PDOException $e) {
+            dd($e);
+        }
+
+        return $events;
+    }
+
+    static function getBanners()
+    {
+        try {
+            $banners = Event::where('active', true)
+                                ->whereDate('date', '>=', date('Y-m-d'))
+                                ->where('banner', '!=', null)
+                                ->inRandomOrder()
+                                ->take(6)
+                                ->pluck('banner')
+                                ->toArray();
+        } catch (Illuminate\Database\QueryException $e) {
+            dd($e);
+        } catch (PDOException $e) {
+            dd($e);
+        }
+
+        return $banners;
     }
 
 

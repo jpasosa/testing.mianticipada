@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Event;
+use App\Category;
+use App\Publicity;
 
 class HomeController extends Controller
 {
@@ -13,8 +16,10 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        // $this->middleware('auth');
     }
+
+
 
     /**
      * Show the application dashboard.
@@ -23,6 +28,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+
+        $data['events']     = Event::getEventsInHome();
+        $data['banners']    = Event::getBanners();
+        $data['categories'] = Category::getToShowInHome();
+        $data['publicity']  = Publicity::getPublicity();
+
+        return view( 'newhome', $data );
     }
 }

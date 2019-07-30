@@ -1,3 +1,6 @@
+<p>Publicidad para mostrar:  {{ $publicity->title }}</p>
+
+
 @section('banner_publicity')
     <section class="section-call-to-action">
         <div class="container">

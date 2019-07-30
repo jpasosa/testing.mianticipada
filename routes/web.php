@@ -46,10 +46,7 @@ Route::get('testing', function ()
     return true;
 });
 
-
-Route::get('/', function () {
-    return view('newhome');
-});
+Route::get('/', 'HomeController@index');
 
 
 Route::get('/buscar', function () {

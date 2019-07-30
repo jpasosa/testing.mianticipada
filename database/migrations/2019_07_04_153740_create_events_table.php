@@ -17,7 +17,7 @@ class CreateEventsTable extends Migration
         {
             $table->BigIncrements('id');
             $table->string('title');
-            $table->string('description')->nullable();
+            $table->longText('description')->nullable();
             $table->string('url')->unique();
             $table->boolean('public')->default(true);
             $table->boolean('active')->default(true);

@@ -1,7 +1,7 @@
 23.Julio.2019
 
 
-HOME
+HOME-------------------------------------------------------------------------------------------------------------------
     banners -> Van a salir de los activos que tengan nombre de archivo en campo "banner" del evento
     Eventos -> Se van a mostrar los seis más cercanos en función a la fecha.
             -> Quiero hacer íconos representativos en cada evento que figuren acá, por ejemplo para que el usuario
@@ -9,3 +9,11 @@ HOME
             -> También que esté preparado para redirijir a las redes sociales y al evento en facebook por ejemplo
     Categorías -> Vamos a poner seis categorías principales según estén en la tabla categories, ordenadas por "orden"
     Publicidad -> Vamos a pensar la lógica de la tabla "publicities"
+
+
+x CATEGORIAS x MENU------------------------------------------------------------------------------------------------------------
+
+
+
+
+x DETALLE EVENTO----------------------------------------------------------------------------------------------------------------

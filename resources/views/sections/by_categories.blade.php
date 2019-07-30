@@ -1,3 +1,7 @@
+@foreach ($categories AS $category)
+    <p>Nombre de la categoría: {{ $category->name }}</p>
+@endforeach
+
 @section('by_categories')
     <section class="section-event-category">
         <div class="spacer-35"></div>

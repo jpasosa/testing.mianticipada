@@ -20,7 +20,8 @@ class CreatePublicitiesTable extends Migration
             $table->string('text')->nullable();
             $table->string('textnote')->nullable();
             $table->string('link');
-            $table->enum('section', ['home', 'event_detail', 'all_events', 'category_menu', 'buy_event'])->default('home');
+            $table->date('finish');
+            // $table->enum('section', ['home', 'event_detail', 'all_events', 'category_menu', 'buy_event'])->default('home');
             $table->timestamps();
         });
     }

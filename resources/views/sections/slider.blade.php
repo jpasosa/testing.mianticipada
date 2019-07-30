@@ -1,3 +1,6 @@
+@foreach ($banners AS $nameImageBanner)
+    <p>Nombre imágen del banner: {{ $nameImageBanner }}</p>
+@endforeach
 @section('slider')
     <section class="hero-3">
         <div class="container">

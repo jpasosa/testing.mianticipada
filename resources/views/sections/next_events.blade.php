@@ -9,6 +9,9 @@
                 </div>
                 <div class="section-content">
                     <ul class="clearfix">
+                        @foreach ($events as $event)
+                            <p>This is user {{ $event->title }}</p>
+                        @endforeach
                         <li>
                             <div class="date">
                                 <a href="#">
