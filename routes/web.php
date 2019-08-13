@@ -50,6 +50,8 @@ Route::get('/', 'HomeController@index');
 
 Route::get('/eventos', 'AllEventsController@index');
 
+Route::get('/evento/{url}', 'EventController@show')->middleware('auth');;
+
 
 
 Route::get('/buscar', function () {

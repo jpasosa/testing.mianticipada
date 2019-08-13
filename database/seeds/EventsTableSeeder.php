@@ -167,7 +167,7 @@ class EventsTableSeeder extends Seeder
         DB::table('events')->insert([
             'title' => 'Morcheeba',
             'description' => 'Morcheeba se presentará el día domingo 20 de octubre en el Teatro Coliseo.',
-            'url' => 'morcheeba',
+            'url' => 'morcheeba-live',
             'public' => true,
             'date' => '2019-12-22',
             'duration' => '3h',
