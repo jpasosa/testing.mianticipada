@@ -48,5 +48,77 @@ class LocationsNormalTableSeeder extends Seeder
             'created_at'   => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at'   => Carbon::now()->format('Y-m-d H:i:s'),
         ]);
+        DB::table('locations_normal')->insert([
+            'name'         => 'Entrada General / Anticipada hasta 30-Nov',
+            'description'  => 'Única entrada General',
+            'price'        => 250.00,
+            'serviceprice' => 30.00,
+            'restquant'    => 223,
+            'totalquant'   => 400,
+            'event_id'     => 3,
+            'activeimage'  => 'general_aladin.jpg',
+            'created_at'   => Carbon::now()->format('Y-m-d H:i:s'),
+            'updated_at'   => Carbon::now()->format('Y-m-d H:i:s'),
+        ]);
+        DB::table('locations_normal')->insert([
+            'name'         => 'Pullman',
+            'description'  => 'Pullman',
+            'price'        => 400.00,
+            'serviceprice' => 50.00,
+            'restquant'    => 115,
+            'totalquant'   => 700,
+            'event_id'     => 4,
+            'activeimage'  => 'pullman_magodeoz.jpg',
+            'created_at'   => Carbon::now()->format('Y-m-d H:i:s'),
+            'updated_at'   => Carbon::now()->format('Y-m-d H:i:s'),
+        ]);
+        DB::table('locations_normal')->insert([
+            'name'         => 'Pullman',
+            'description'  => 'Pullman',
+            'price'        => 300.00,
+            'serviceprice' => 40.00,
+            'restquant'    => 117,
+            'totalquant'   => 300,
+            'event_id'     => 5,
+            'activeimage'  => 'colar_humano.jpg',
+            'created_at'   => Carbon::now()->format('Y-m-d H:i:s'),
+            'updated_at'   => Carbon::now()->format('Y-m-d H:i:s'),
+        ]);
+        DB::table('locations_normal')->insert([
+            'name'         => 'Platea',
+            'description'  => 'Platea',
+            'price'        => 300.00,
+            'serviceprice' => 40.00,
+            'restquant'    => 117,
+            'totalquant'   => 300,
+            'event_id'     => 6,
+            'activeimage'  => 'lafaraona.jpg',
+            'created_at'   => Carbon::now()->format('Y-m-d H:i:s'),
+            'updated_at'   => Carbon::now()->format('Y-m-d H:i:s'),
+        ]);
+        DB::table('locations_normal')->insert([
+            'name'         => 'Platea',
+            'description'  => 'Platea',
+            'price'        => 400.00,
+            'serviceprice' => 40.00,
+            'restquant'    => 199,
+            'totalquant'   => 500,
+            'event_id'     => 7,
+            'activeimage'  => 'fiesta_gardelitos.jpg',
+            'created_at'   => Carbon::now()->format('Y-m-d H:i:s'),
+            'updated_at'   => Carbon::now()->format('Y-m-d H:i:s'),
+        ]);
+        DB::table('locations_normal')->insert([
+            'name'         => 'Platea baja',
+            'description'  => 'Platea baja',
+            'price'        => 600.00,
+            'serviceprice' => 60.00,
+            'restquant'    => 238,
+            'totalquant'   => 800,
+            'event_id'     => 8,
+            'activeimage'  => 'morcheeba.jpg',
+            'created_at'   => Carbon::now()->format('Y-m-d H:i:s'),
+            'updated_at'   => Carbon::now()->format('Y-m-d H:i:s'),
+        ]);
     }
 }

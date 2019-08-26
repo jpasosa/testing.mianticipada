@@ -78,7 +78,7 @@ class EventsTableSeeder extends Seeder
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
 
         ]);
-        DB::table('events')->insert([
+        DB::table('events')->insert([ //id=4
             'title' => 'El mago de OZ',
             'description' => 'Al mago de Oz la original, dirigida por Federico Husgary',
             'url' => 'el-mago-de-oz',
@@ -100,7 +100,7 @@ class EventsTableSeeder extends Seeder
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
 
         ]);
-        DB::table('events')->insert([
+        DB::table('events')->insert([ // id=5
             'title' => 'Volar es humano, aterrizar es divino',
             'description' => 'Luego de 5 años en el Teatro Maipo, Enrique Piñeyro vuelve por 6to año consecutivo con el aclamado stand up “Volar es humano aterrizar es divino”, en el Teatro Coliseo. Convierte este original show en un nuevo género que alterna sin pausa entre la risa y la reflexión profunda, demostrándonos que si copiáramos muchas de las cosas que hacemos en aviación, este sería un lugar más bello e infinitamente más seguro para convivir y más respetuoso de los derechos ajenos.',
             'url' => 'volar-es-humano-atterizar-es-divino',
@@ -122,7 +122,7 @@ class EventsTableSeeder extends Seeder
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
 
         ]);
-        DB::table('events')->insert([
+        DB::table('events')->insert([ // id=6
             'title' => 'La Faraona',
             'description' => 'Martín Cirio (35) se hizo famoso a través de su canal de youtube. Comenzó con guías turísticas: “Videos sobre viajes, como Marley por el mundo, pero pobre”, diría él mismo. El salto definitivo hacia la popularidad fue luego de la creación de “La Faraona”, el mismo y habitual Martín en sus formas, pero con un minivestido blanco y una peluca rubia.',
             'url' => 'la-faraona',
@@ -143,7 +143,7 @@ class EventsTableSeeder extends Seeder
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ]);
-        DB::table('events')->insert([
+        DB::table('events')->insert([ // id=7
             'title' => 'Los Gardelitos | Fiesta Clandestino',
             'description' => 'Recital de los gardelitos en las fiestas siempre arriba llamadas Fiestas Clandestinas, te lo vas a perder ?',
             'url' => 'los-gardelitos-fiesta-clandestina',
@@ -164,7 +164,7 @@ class EventsTableSeeder extends Seeder
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ]);
-        DB::table('events')->insert([
+        DB::table('events')->insert([ // id=8
             'title' => 'Morcheeba',
             'description' => 'Morcheeba se presentará el día domingo 20 de octubre en el Teatro Coliseo.',
             'url' => 'morcheeba-live',

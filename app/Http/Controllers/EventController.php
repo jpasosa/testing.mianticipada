@@ -38,6 +38,9 @@ class EventController extends Controller
 
         $data['event'] = isset($event[0]) ? $event[0] : '';
 
+
+
+
         $data['first_locations']= $event[0]->locationsNormal[0]; // luego hay que utilizar ajax para realizar bien esto.
         $data['totaltickets']   = 450;
         $data['serviceprice']   = 60;
